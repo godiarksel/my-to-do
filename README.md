@@ -12,9 +12,6 @@
 - Javascript
 - Webpack
 
-## Live Demo (if available)
-
-[Live Demo Link](https://godiarksel.github.io/my-todolist/)
 
 
 ## Getting Started
