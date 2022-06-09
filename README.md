@@ -2,7 +2,7 @@
 
 # My To-Do List
 
-> This is a project undertaken in week two of module two to test our abilities to develop a functional application using Webpack.
+> This is a project undertaken in week two of module two to test our abilities to develop a functional application using Webpack.The application is meant to record an order list of tasks,store them for the user and only be erased on completion of the task.
 
 
 ## Built With
