@@ -45,6 +45,36 @@ const addTasks = (task) => {
   addToLocalStorage(task, false, checkBox.length);
 };
 
+const editTask = (task, taskContainer) => {
+  const editedTask = document.createElement('div');
+  editedTask.type = 'text';
+  editedTask.classList.add('editedTask');
+  editedTask.value = task.textContent;
+  taskContainer.replaceChild(editedTask, task);
+  editedTask.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter'){
+      const taskContainers = document.querySelectorAll('.tasks');
+      localTasks = JSON.parse(localStorage.getItem('taskList'));
+      for (let i = 0 ; i < taskContainers.length ; i++){
+        if (taskContainers[i].classList.contains('completed-tasks-container')){
+          localTasks[i].description = editedTask.value;
+          localStorage.setItem('taskList', JSON.stringify(localTasks));
+        }
+      }
+      editedTask.parentElement.classList.remove('completed-tasks-container');
+      taskContainer.replaceChild( task, editedTask);
+      task.textContent = editedTask.value;
+    }
+  })
+}
+
+const editEllip = document.querySelectorAll('.fa-ellipsis-vertical');
+  editEllip.forEach((i) => {
+    i.addEventListener('click', () => {
+      editTask();
+    })
+  })
+
 taskInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter' && taskInput.value !== null) {
     e.preventDefault();
