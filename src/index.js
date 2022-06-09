@@ -1,9 +1,7 @@
 import './index.css';
 
-// const taskSection = document.querySelector('section');
 const taskInput = document.querySelector('input');
 const taskContainer = document.querySelector('.task-container');
-// const clearBtn = document.querySelector('button');
 
 class Task {
   constructor(description, completed, index) {
@@ -44,7 +42,7 @@ const addTasks = (task) => {
   taskContainer.appendChild(tasksEl);
   const checkBox = document.querySelectorAll('.checkbox');
   completeTask(checkBox);
-  addToLocalStorage(task, false, checkBox.length - 1);
+  addToLocalStorage(task, false, checkBox.length);
 };
 
 taskInput.addEventListener('keypress', (e) => {
