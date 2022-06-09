@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  box-shadow: 5px 5px 15px -2px rgb(35, 34, 34, 0.8);
+  background-color: white;
+  padding-top: 22px;
+  width: 40%;
+  border-radius: 4px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 11px 22px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.tasks {
+  display: flex;
+  border-top: 1px solid rgb(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+  padding: 16px 22px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+button {
+  width: 100%;
+  border: none;
+  background-color: white;
+  padding: 15px 0;
+  border-top: 1px solid rgb(0, 0, 0, 0.4);
+  color: rgb(35, 34, 34);
+}
+
+button:hover {
+  background-color: rgb(223, 220, 220);
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 12%;
+}
+
+span {
+  flex: 1;
+}
+
+.fa-trash {
+  display: none;
+}
+
+.trashicon-active {
+  display: block;
+}
+
+.dotsicon-inactive {
+  display: none;
+}
+
+.completed-tasks-container {
+  background-color: rgb(197, 194, 194);
+}
+
+.completed-tasks {
+  text-decoration: line-through;
+}
