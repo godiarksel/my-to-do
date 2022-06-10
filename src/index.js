@@ -37,17 +37,17 @@ const editTask = (task, taskContainer) => {
   editedTask.value = task.textContent;
   taskContainer.replaceChild(editedTask, task);
   editedTask.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter'){
+    if (e.key === 'Enter') {
       const taskContainers = document.querySelectorAll('.tasks');
       const localTasks = JSON.parse(localStorage.getItem('taskList'));
-      for (let i = 0 ; i < taskContainers.length ; i += 1){
-          localTasks[i].description = editedTask.value;
-          localStorage.setItem('taskList', JSON.stringify(localTasks));
-        }
+      for (let i = 0; i < taskContainers.length; i += 1) {
+        localTasks[i].description = editedTask.value;
+        localStorage.setItem('taskList', JSON.stringify(localTasks));
+      }
       taskContainer.replaceChild(task, editedTask);
       task.textContent = editedTask.value;
     }
-  })
+  });
 };
 
 const addTasks = (task) => {
@@ -67,9 +67,9 @@ const addTasks = (task) => {
   const editEllip = document.querySelectorAll('.fa-ellipsis-vertical');
   editEllip.forEach((i) => {
     i.addEventListener('click', () => {
-      editTask( i.previousElementSibling,tasksEl );
-    })
-  })
+      editTask(i.previousElementSibling, tasksEl);
+    });
+  });
 };
 
 taskInput.addEventListener('keypress', (e) => {
