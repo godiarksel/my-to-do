@@ -49,9 +49,12 @@ body {
   margin: 15px 20px;
 }
 
-
 .inactive {
   display: none;
+}
+
+.line-through {
+  text-decoration: line-through;
 }
 
 .task-ui {
@@ -68,7 +71,7 @@ body {
 }
 
 .highlight {
-  background-color: #fbfecd;
+  background-color: rgb(220, 220, 220);
 }
 
 .para {
@@ -79,7 +82,6 @@ body {
 .para:focus {
   outline: none;
 }
-
 
 .clear-btn {
   width: 100%;
