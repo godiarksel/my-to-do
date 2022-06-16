@@ -38,9 +38,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- @whid-bb and @wale-prog for their assistance and motivation 🥇 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
 
 ## 📝 License
 
