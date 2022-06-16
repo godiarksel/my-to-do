@@ -1,4 +1,5 @@
 import { taskArray } from './taskArray';
+import interact from './interact';
 
 const displayTask = (text) => {
   const taskList = document.querySelector('.task-list');
@@ -30,6 +31,7 @@ const displayTask = (text) => {
 const TaskDefault = () => {
   taskArray.forEach((task) => {
     displayTask(task);
+    interact();
   });
 };
 export default TaskDefault;
