@@ -1,5 +1,5 @@
 {
-  "name": "to-do-list-project",
+  "name": "my-to-do",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wale-prog/To-do-List-Project.git"
+    "url": "git+https://github.com/godiarksel/my-to-do.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wale-prog/To-do-List-Project/issues"
+    "url": "https://github.com/godiarksel/my-to-do/issues"
   },
-  "homepage": "https://github.com/wale-prog/To-do-List-Project#readme",
+  "homepage": "https://github.com/godiarksel/my-to-do#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
