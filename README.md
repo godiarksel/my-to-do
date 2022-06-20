@@ -12,6 +12,8 @@
 - Javascript
 - Webpack
 
+## Live Demo
+ [Click here for live demo](https://godiarksel.github.io/my-to-do/)
 
 ### Prerequisites
 1. A code editor
